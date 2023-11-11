@@ -17,7 +17,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-
+#include <stdint.h>
 #include <spake2/spake2.h>
 
 static const uint8_t kPassword[70] = {

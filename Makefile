@@ -34,7 +34,7 @@ install: build
 	install -m 644 include/spake2/* $(DESTDIR)$(PREFIX)/include/spake2
 
 test: test.c build
-	$(CC) -o test -Iinclude/ -L. -lspake2 test.c
+	$(CC) test.c -o test -Iinclude/ -L. -lspake2 
 	./test
 
 .PHONY: clean
